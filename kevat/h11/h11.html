@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <link rel="stylesheet" href="h11.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lomakkeiden käsittely</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+  <nav>
+    <ul id="takaisin">
+      <li><a href="../kevat.html">&#8592; Takaisin harjoituksiin</a> </li> 
+      <li><a href="../../index.html">&#8592; Takaisin etusivulle</a> </li> 
+    </ul>
+  </nav>
+  <main>
+    <h2>Tehtävä 1</h2>
+    <input type="text" id="nimiTextInput" placeholder="Nimi">
+    <br>
+    <p>
+      <button id="tervehdiButton">Tervehdi</button>
+    </p>
+  
+    <h2>Tehtävä 2</h2>
+    <p>Kirjoita tähän jotain ja katso mitä tapahtuu: </p>
+    <input type="text" id="isoTextInput">
+  
+    <h2>Tehtävä 3</h2>
+    <p>Anna tarpeeksi pitkä salasana: </p>
+    <input type="password" id="salasanaTextInput">
+  
+    <h2>Tehtävä 4</h2>
+    <div>
+      <input type="checkbox" id="makaronilaatikko" name="ruoka" value="makaronilaatikko">
+      <label for="makaronilaatikko">Makaronilaatikko</label><br>
+  
+      <input type="checkbox" id="jauhelihakeitto" name="ruoka" value="jauhelihakeitto">
+      <label for="jauhelihakeitto">Jauhelihakeitto</label><br>
+  
+      <input type="checkbox" id="kalapuikot" name="ruoka" value="kalapuikot">
+      <label for="kalapuikot">Kalapuikot</label><br>
+  
+      <input type="checkbox" id="kanacurry" name="ruoka" value="kanacurry">
+      <label for="kanacurry">Kanacurry</label><br><br>
+  
+      <button id='tilaaButton'>Tilaa</button>
+      <p id="ruokavalinnat"></p>
+    </div>
+      
+  
+      <h2>Tehtävä 5+6</h2>
+      <select id="valineMenu" class="menu menu1">
+        <option value="eivalittu">valitse</option>
+        <option value="autot">Autot</option>
+        <option value="veneet">Veneet</option>
+      </select>
+      <select id="autoMenu" class="menu menu2">
+        <option value="henkiloauto">Henkilöauto</option>
+        <option value="kuormaauto">Kuorma-auto</option>
+        <option value="bussi">Bussi</option>
+      </select>
+      <select id="veneMenu" class="menu menu2">
+        <option value="soutuvene">Soutuvene</option>
+        <option value="purjevene">Purjevene</option>
+        <option value="moottorivene">Moottorivene</option>
+      </select>
+      
+      <p id="valittuvaline"></p>  
+  </main>  
+  <script src="h11.js"></script>
+</body>
+</html>

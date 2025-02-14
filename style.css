@@ -1,0 +1,113 @@
+:root {
+  --pagebg: rgb(240, 240, 240);
+  --elementbg: rgb(255, 255, 255);
+  --hoverbg: rgb(215, 215, 255);
+  --shadow: inset rgba(67, 67, 67, 0.923) 0 0 10px;
+}
+html {
+  background-color: var(--pagebg);
+}
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(0, 0, 0);
+  outline: none;
+}
+input:focus,
+button:focus,
+textarea:focus,
+area:focus,
+select:focus,
+a:focus {
+  outline: solid black 2px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.exercises {
+  text-align: left;
+  margin: 0;
+}
+.exercises a {
+  padding: 5px;
+  display: block;
+}
+nav ul {
+  padding: 10px;
+  text-align: center;
+}
+nav ul li {
+  padding: 6px;
+}
+main {
+  box-shadow: var(--shadow);
+  background-color: var(--elementbg);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+}
+#takaisin {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+li a {
+  padding: 2px;
+  border-radius: 10px;
+  transition: all 0.2s ease-out;
+  text-decoration: none;
+}
+li:hover a {
+  transition: all 0s;
+  box-shadow: var(--shadow);
+}
+li:active a {
+  opacity: 0.5;
+}
+nav li {
+  list-style-type: none;
+}
+nav a {
+  padding: 7px;
+}
+h2 {
+  text-align: center;
+}
+select {
+  padding: 5px;
+  border-radius: 3px;
+  background-color: rgb(237, 219, 255);
+}
+input,
+textarea {
+  padding: 5px;
+  border-radius: 3px;
+  background-color: rgb(237, 219, 255);
+}
+input:hover,
+input:focus {
+  opacity: 0.7;
+}
+button {
+  border-radius: 3px;
+  color: white;
+  font-size: 19px;
+  background-color: rgb(135, 135, 135);
+  font-weight: 700;
+  padding: 10px 20px;
+  margin: 1px;
+  transition: all 0.1s;
+}
+button:hover {
+  color: black;
+  background-color: rgba(177, 177, 177, 0.7);
+}
+button:active {
+  opacity: 0.9;
+  color: white;
+  background-color: rgba(177, 177, 177, 0.812);
+}

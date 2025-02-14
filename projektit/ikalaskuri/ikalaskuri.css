@@ -1,0 +1,171 @@
+*{
+    font-family:poppins;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240,240,240);
+  }
+  nav{
+    margin:50px 0px;
+  }
+  main{
+    box-shadow: rgba(0, 0, 0, 0.063) 10px 10px 20px;
+    background-color: rgb(255, 255, 255);
+    display:flex;
+    width: 300px;
+    flex-direction: column;
+    padding: 70px 25px;
+    border-radius: 20px 20px 90px 20px;
+  }
+  #top{
+    width: 100%;
+    display: flex;
+    color:gray;
+    justify-content: space-between;
+    align-items: start;
+    height: 110px;
+  }
+  .dmy{
+    width: 86px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  #day,#month,#year{
+    margin-bottom: 7px;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  #day{
+    width: 100%;
+  }
+  .input{
+    height: 40px;
+    width: 55px;
+    border:solid rgba(206, 206, 206, 0.765) 1px;
+    border-radius: 5px;
+    padding: 3px 15px;
+    font-size:20px;
+    font-weight: 700;
+    color:black;
+    outline: none;
+  }
+  .input:focus{
+    border: solid rgba(133, 77, 255,1) 1px;
+  }
+  input::placeholder{
+    color:rgb(136, 136, 136);
+  }
+  #middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+  .ikoni{
+    border-radius: 50%;
+    width: 30px;
+    padding: 20px;
+    position: absolute;
+  }
+  #submit{
+    background-color:rgb(133, 77, 255);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.1s;
+    border: none;
+    outline: none;
+  }
+  #submit:hover{
+    cursor:pointer;
+    background-color:rgb(99, 57, 189);
+    margin-bottom: 9px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 9px 6px;
+  }
+  #submit:focus{
+    margin-bottom: 9px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 9px 6px;
+  }
+  #submit:active{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 4px;
+    margin-bottom: 0px;
+    background-color: black;
+  }
+  #bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+  }
+  .result{
+    height: 45px;
+    font-size: 53px;
+    font-weight: 800;
+    font-style: italic;
+  }
+  #viiva{
+    width:100%;
+    opacity: 0.3;
+  }
+  .amount{
+    font-size: 53px;
+    color:rgb(134, 76, 255);
+  }
+  .error{
+    color: hsl(0, 100%, 67%);
+    font-size: 9px;
+    font-style: italic;
+    width: 100px;
+  }
+  
+  @media (min-width:1440px) {
+    main{
+      padding: 40px 40px;
+      width: 500px;
+      height: 420px;
+      gap: 0px;
+    }
+    #top{
+      justify-content: start;
+      height: 80px;
+      gap: 30px;
+    }
+    .dmy{
+      width: 100px;
+    }
+    .input{
+      width: 75px;
+    }
+    #middle{
+      height: 70px;
+      justify-content: end;
+      align-items: center;
+    }
+    #submit{
+      height: 70px;
+      width: 70px;
+    }
+    #bottom{
+      gap: 30px;
+    }
+    .result,.amount{
+      font-size: 80px;
+    }
+    .amount{
+      margin: 0;
+    }
+
+  }
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }

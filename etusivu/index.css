@@ -1,0 +1,142 @@
+h3 {
+  margin: 0;
+  font-size: 16px;
+  text-decoration: none;
+}
+.navigate {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  gap: 10px;
+}
+.navigate a {
+  padding: 20px;
+  transition: background-color 0.2s ease-out;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: var(--elementbg);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+.navigate a:hover {
+  background-color: var(--hoverbg);
+  transition: background-color 0s;
+}
+ul li {
+  list-style-type: none;
+  text-decoration: underline;
+}
+ul li:hover {
+  text-decoration: none;
+}
+main,
+main div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main {
+  width: 800px;
+  padding: 25px;
+  justify-content: space-between;
+}
+#kortit {
+  justify-content: space-around;
+  align-items: start;
+  width: 100%;
+  min-height: 210px;
+  display: flex;
+}
+
+.kortti {
+  border-radius: 20px;
+  width: auto;
+  text-align: center;
+  width: 100%;
+  transition: all 0.5s;
+}
+.kortti img {
+  border: transparent solid 2px;
+  border-radius: 15px;
+  height: 120px;
+  transition: height 0.1s;
+}
+.projektilinkki:hover img:focus {
+  outline: none;
+  border: solid rgb(88, 0, 212) 2px;
+}
+.projektilinkki:hover img {
+  outline: none;
+  border: solid rgb(88, 0, 212) 2px;
+}
+.kortti:active {
+  outline: none;
+  opacity: 0.5;
+}
+.kortti {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.pallo {
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.205);
+  right: 0;
+  left: 0;
+  padding: 10px 0px;
+}
+.pallo h3 {
+  font-size: 20px;
+}
+@media (max-width: 800px) {
+  main {
+    width: 400px;
+  }
+  #kortit {
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .kortti,
+  #kortit a {
+    width: 100%;
+  }
+  .kortti img {
+    height: auto;
+    width: 100%;
+  }
+}
+@media (min-width: 800.02px) {
+  .kortti:hover .pallo {
+    background-color: transparent;
+    bottom: -25px;
+    padding: 0;
+  }
+  .kortti:hover img {
+    outline: none;
+    height: 160px;
+  }
+  #kortit .projektilinkki:focus img {
+    outline: none;
+    height: 160px;
+  }
+  .navigate {
+    margin-top: 9%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .navigate a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
+  }
+}

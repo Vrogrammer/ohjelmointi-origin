@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+	<style>
+		body{
+			margin:0px;
+		}
+		#sailio{
+			max-width: 1200px;
+			padding: 0px;
+		}
+		.vika{
+			display: none;
+		}
+		ul{
+			list-style-type:none;
+			padding:0px;
+			margin:0px;
+			width: 100%;
+		}
+		ul li{
+			margin-bottom: 10px;
+			display:block;
+			text-align: center;
+			background-color: gray;
+			padding: 12px 0px;
+			list-style-type: disc;
+		}
+		ul li a{
+			color:white;
+			text-decoration: none;
+		}
+		header{
+			padding: 15px;
+			background-color: rgb(210, 210, 210);
+			text-align: center; 
+		}
+		#otsikko{
+			border-bottom:dashed black 2px;
+		}
+		#kuvaus{
+			text-align: start;
+		}
+		section{
+			padding: 0px 10px 10px 10px;
+		}
+		#uutispalkki{
+			background-color: rgb(212, 212, 212);
+		}
+		#uutispalkki h2{
+			margin:0px;
+			font-size: 40px;
+			padding:15px 10px;
+			color:white;
+			background-color: rgb(162, 162, 162);
+		}
+		@media (min-width:600px){
+			.vika{
+				display:list-item;
+			}
+			ul{
+				padding: 0px;
+				display: flex;
+				background-color: gray;
+				justify-content: space-around;
+			}
+			ul li{
+				padding: 15px;
+				margin: 0px;
+				list-style-type: none;
+			}
+			main{
+				padding-right: 40px;
+				column-gap: 10px;
+				display: flex;
+			}
+		}
+		@media (min-width:800px){
+			nav{
+				background-color: none;
+				display: flex;
+				justify-content: end;
+			}
+			nav ul{
+				padding:0px;
+				margin-right: -5px;
+				background-color: white;
+				justify-content: end;
+			}
+			nav ul li{
+				padding:10px 18px;
+				background-color: gray;
+				margin: 6px 5px;
+			}
+			#otsikko{
+				border:none;
+				text-wrap: nowrap;
+			}
+			header{
+				display: flex;
+				align-items: center;
+				justify-content: end;
+			}
+			#kuvaus{
+				margin-left: 50px;
+				width: 50%;
+			}
+			main{
+				display: flex;
+			}
+			.bruh{
+				padding-top: 10px;
+				display: grid;
+				grid-template-columns: 2fr 1fr;
+			}
+		}
+	</style>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="perus3.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Perustehtävä 3</title>
+</head>
+<body>
+    <a href="../html.html">Takaisin harjoituksiin</a>
+    <hr>
+<div id="sailio">
+	<nav>
+		<ul>
+			<li><a href="#">Linkki</a></li>
+			<li><a href="#">Linkki</a></li>
+			<li><a href="#">Linkki</a></li>
+			<li class="vika"><a href="#">Linkki</a></li>
+			<li class="vika"><a href="#">Linkki</a></li>
+		</ul>
+	</nav>
+	
+	<header>
+		<div id="otsikko">
+			<h1>Lorem Ipsum</h1>
+			<h2>Täytetekstien aatelia</h2>
+		</div>
+		<div id="kuvaus">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultricies tristique tellus eget ullamcorper. Nullam egestas nunc vel posuere placerat. Morbi enim nibh, aliquam at vulputate ut, scelerisque in est. Sed mollis nisl odio, vitae pellentesque diam fermentum id. Fusce vitae dolor viverra, rutrum elit at, egestas turpis. Morbi malesuada tortor purus, vitae eleifend mauris sodales ac. Nullam et semper tellus, a convallis orci.</p>
+		</div>
+	</header>
+
+	<div class="bruh">
+		<main>
+			<article>
+				<h2>Artikkelin otsikko</h2>
+			
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultricies tristique tellus eget ullamcorper. Nullam egestas nunc vel posuere placerat. Morbi enim nibh, aliquam at vulputate ut, scelerisque in est. Sed mollis nisl odio, vitae pellentesque diam fermentum id. Fusce vitae dolor viverra, rutrum elit at, egestas turpis. Morbi malesuada tortor purus, vitae eleifend mauris sodales ac. Nullam et semper tellus, a convallis orci. Phasellus justo sapien, vestibulum at dignissim sed, vulputate nec nunc. Praesent mauris sem, aliquet vehicula consequat in, pharetra non risus. Sed posuere elit nulla, ac viverra odio ultrices cursus. Sed tincidunt urna sem. Aenean porttitor scelerisque erat, rhoncus vestibulum dui pretium ut.</p>
+				
+				<p>Aenean volutpat elit vel quam ultricies consequat. Morbi quis enim non enim ornare rhoncus vitae vel arcu. Ut quis nibh dolor. Aliquam rutrum vestibulum nisi id facilisis. Maecenas vel risus tempus ipsum iaculis porttitor. Donec ac risus faucibus, aliquet mi quis, bibendum diam. Integer a neque ac neque gravida elementum a ac purus. Donec placerat quis lacus vitae faucibus. Nam dapibus ligula in tortor tempus, nec iaculis lacus convallis. Phasellus eu elementum tellus. Nam leo nibh, gravida a nunc sit amet, tincidunt ultrices ipsum. Proin sagittis pharetra dolor, id volutpat lorem viverra sit amet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+			</article>
+
+			<article>
+				<h2>Artikkelin otsikko</h2>
+			
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultricies tristique tellus eget ullamcorper. Nullam egestas nunc vel posuere placerat. Morbi enim nibh, aliquam at vulputate ut, scelerisque in est. Sed mollis nisl odio, vitae pellentesque diam fermentum id. Fusce vitae dolor viverra, rutrum elit at, egestas turpis. Morbi malesuada tortor purus, vitae eleifend mauris sodales ac. Nullam et semper tellus, a convallis orci. Phasellus justo sapien, vestibulum at dignissim sed, vulputate nec nunc. Praesent mauris sem, aliquet vehicula consequat in, pharetra non risus. Sed posuere elit nulla, ac viverra odio ultrices cursus. Sed tincidunt urna sem. Aenean porttitor scelerisque erat, rhoncus vestibulum dui pretium ut.</p>
+				
+				<p>Aenean volutpat elit vel quam ultricies consequat. Morbi quis enim non enim ornare rhoncus vitae vel arcu. Ut quis nibh dolor. Aliquam rutrum vestibulum nisi id facilisis. Maecenas vel risus tempus ipsum iaculis porttitor. Donec ac risus faucibus, aliquet mi quis, bibendum diam. Integer a neque ac neque gravida elementum a ac purus. Donec placerat quis lacus vitae faucibus. Nam dapibus ligula in tortor tempus, nec iaculis lacus convallis. Phasellus eu elementum tellus. Nam leo nibh, gravida a nunc sit amet, tincidunt ultrices ipsum. Proin sagittis pharetra dolor, id volutpat lorem viverra sit amet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+			</article>
+		</main>
+
+		<div id="uutispalkki">
+			<h2>Uutiset</h2>
+			<section>
+				<h3>Otsikko</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultricies tristique tellus eget ullamcorper. Nullam egestas nunc vel posuere placerat. Morbi enim nibh, aliquam at vulputate ut, scelerisque in est.</p>
+			</section>
+			<section>
+				<h3>Otsikko</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultricies tristique tellus eget ullamcorper. Nullam egestas nunc vel posuere placerat. Morbi enim nibh, aliquam at vulputate ut, scelerisque in est.</p>
+			</section>
+			<section>
+				<h3>Otsikko</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultricies tristique tellus eget ullamcorper. Nullam egestas nunc vel posuere placerat. Morbi enim nibh, aliquam at vulputate ut, scelerisque in est.</p>
+			</section>
+		</div>
+	</div>
+	
+</div>
+
+</body>
+</html>

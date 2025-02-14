@@ -1,0 +1,51 @@
+*{
+    font-family: Arial;
+}
+
+h1{
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 36px;
+    font-style: italic;
+    text-align: center;
+    letter-spacing: +2px;
+}
+
+h2{
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+#sisallysluettelo{
+    font-weight: bold;
+}
+
+td{
+    font-style: italic;
+}
+
+p{
+    text-indent: 20px;
+    
+}
+
+body{
+    background-image:url(back.png);
+    background-size: 300px;
+    background-repeat: repeat;
+    background-position: auto;
+    background-attachment: fixed;
+}
+
+#div1, #div3, #div5{
+    background-color: whitesmoke;
+    padding: 1px;
+}
+
+#div2, #div4, #div6{
+    background-color: azure;
+    padding: 1px;
+}
+
+#sisallysluettelo a:hover{
+    background-color: yellow;
+}

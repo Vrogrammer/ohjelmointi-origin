@@ -1,0 +1,30 @@
+*{
+    outline:none;
+}
+  #lomake input[type=radio]{
+    margin:0;
+}
+  p{
+    margin: 5px 0px;
+  }
+  label {
+      display: inline-block;
+      width: 150px;
+  }
+  .virhe {
+      color: #ff0000;
+      padding-left: 10px;
+      font-weight: 600; 
+  }
+  .piilotettu {
+      display: none;
+  }
+  #sukupuoli-mika::placeholder{
+    color: rgb(141, 141, 141);
+  }
+  input[type = submit]:active{
+    opacity: 0.5;
+  }
+  #sukupuolilabel{
+    display: inline-block;
+  }

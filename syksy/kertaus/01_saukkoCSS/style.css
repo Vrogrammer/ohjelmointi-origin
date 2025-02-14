@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+.header {
+  text-align: center;
+  color: white;
+  padding: 60px;
+  background: #1abc9c;
+  border-bottom: 5px solid #16a085;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: #16a085;
+  color: white;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+/*Sivupalkki*/
+.side {
+  flex: 25%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.side img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/*Pääsisältö*/
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+  margin-left: 20px; /* sivupalkin ja pääsisällön väli */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reference {
+  color: #a1bcb7;
+}
+
+.imagePair {
+  margin-bottom: 20px;
+}
+
+.imagePair img {
+  width: 49%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #333;
+  color: white;
+  margin-top: 40px;
+  border-top: 5px solid #16a085;
+}
+
+/* Responsiivisuus */
+@media screen and (max-width: 777px) {
+  .row {
+    /*tästä puuttuu jotain*/
+  }
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+  .side {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .main {
+    margin-left: 0; /* Poistetaan marginaali pienemmillä näytöillä */
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}

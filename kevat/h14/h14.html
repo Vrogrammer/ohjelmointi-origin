@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lomakekäsittelijä</title>
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" href="h14.css">
+</head>
+<body>
+  <nav>
+    <ul id="takaisin">
+      <li><a href="../kevat.html">&#8592; Takaisin harjoituksiin</a> </li> 
+      <li><a href="../../index.html">&#8592; Takaisin etusivulle</a> </li> 
+    </ul>
+  </nav>
+  <main>
+    <form id="lomake">
+        <p>
+          <label for="nimi">Nimi: </label>
+          <input type="text" id="nimi">
+          <span id="virhe-nimi" class="virhe"></span>
+        </p>
+        <p>
+          <label for="sposti">Sähköposti: </label>
+          <input type="text" id="sposti">
+          <span id="virhe-sposti" class="virhe"></span>
+        </p>
+        <p>
+          <label for="salasana">Salasana: </label>
+          <input type="password" id="salasana">
+          <span id="virhe-salasana" class="virhe"></span>
+        </p>  
+        <p>
+          <label for="salasana2">Salasana uudelleen: </label>
+          <input type="password" id="salasana2"><span id="virhe-salasana2" class="virhe"></span></p>
+      
+      <p>
+      <p id="sukupuolilabel">sukupuoli: </p>
+      <span id="virhe-sukupuoli" class="virhe"></span><br>
+          <input type="radio" id="sukupuoli-mies" name="sukupuoli" value="mies">
+          <label for="sukupuoli-mies">Mies</label>
+          <br>
+          <input type="radio" id="sukupuoli-nainen" name="sukupuoli" value="nainen">
+          <label for="sukupuoli-nainen">Nainen</label>
+          <br>
+          <input type="radio" id="sukupuoli-muu" name="sukupuoli" value="muu">
+          <label for="sukupuoli-muu">Muu</label>
+          <br>
+          <input type="text" id="sukupuoli-mika" class="piilotettu" placeholder="(vaihtoehtoinen)">
+      </p>
+      <p>
+        <input type="submit" id="rekisteroidy" value="Rekisteröidy">
+      </p>
+    </form>
+  </main>
+  
+
+  <script src="h14.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="ikalaskuri.css">
+  <title>Age calculator app</title>
+</head>
+<body>
+  <nav>
+    <ul id="takaisin">
+      <li><a href="../../index.html">&#8592; Takaisin etusivulle</a> </li> 
+    </ul>
+  </nav>
+  
+  <main id="laskuri">
+    <div id="top">
+      <div class="dmy">
+        <p id="day">D A Y</p>
+        <input type="text" class="input" id="dayInput" placeholder="DD">
+        <p id="invalidDay" class="error dayError"></p>
+      </div>
+      
+      <div class="dmy">
+        <p id="month">M O N T H</p>
+        <input type="text" class="input" id="monthInput" placeholder="MM">
+        <p id="invalidDay" class="error monthError"></p>
+      </div>
+
+      <div class="dmy">
+        <p id="year">Y E A R</p>
+        <input type="text" class="input" id="yearInput" placeholder="YYYY">
+        <p id="invalidDay" class="error yearError"></p>
+      </div>
+    </div>
+
+    <div id="middle">
+      <hr id="viiva">
+      <button id="submit">
+        <img src="assets/images/icon-arrow.svg" class="ikoni">
+      </button>
+        
+      
+    </div>
+
+    <div id="bottom">
+      <div class="result"><span id="years" class="amount">--</span> years</div>
+      <div class="result"><span id="months" class="amount">--</span> months</div>
+      <div class="result"><span id="days" class="amount">--</span> days</div>
+    </div>
+  </main>
+  
+<script src="ikalaskuri.js"> </script>
+</body>
+</html>

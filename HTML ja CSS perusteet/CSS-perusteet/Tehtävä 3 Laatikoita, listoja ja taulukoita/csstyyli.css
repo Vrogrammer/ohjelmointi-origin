@@ -1,0 +1,112 @@
+*{
+    font-family: Arial;
+}
+
+h1{
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 36px;
+    font-style: italic;
+    text-align: center;
+    letter-spacing: +2px;
+}
+
+h2{
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+#sisallysluettelo{
+    font-weight: bold;
+}
+
+td{
+    font-style: italic;
+}
+
+p{
+    text-indent: 20px;
+    
+}
+
+body{
+    background-image:url(back.png);
+    background-size: 300px;
+    background-repeat: repeat;
+    background-position: auto;
+    background-attachment: fixed;
+}
+
+#div1, #div3, #div5{
+    background-color: rgba(214, 236, 255, 0.804);
+}
+
+#div2, #div4, #div6{
+    background-color: azure;
+}
+
+div{
+    padding: 1px 20px;
+    border: solid grey;
+    margin: 20px;
+}
+
+#sisallysluettelo a:hover   {
+    background-color: yellow;
+}
+
+#sisallysluettelo{
+    border:none;
+
+}
+
+#sisallysluettelo ul{
+list-style: square;
+}
+
+#div6 th{
+    color: white;
+    background-color: rgb(21, 135, 129);
+    padding-top: 5px;
+    padding-bottom: 2px;
+
+}
+
+#div6 table{
+    background-color: whitesmoke;
+    border: solid grey;
+}
+
+tr:nth-child(odd){
+color:darkblue ;
+}
+
+
+tr:nth-child(even){
+color: darkmagenta;
+}
+
+#valikko {
+    list-style: none;  /* luettelomerkit pois */
+    padding: 0;
+    margin: 0;
+    background-color: lightblue;
+}
+
+#valikko li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#valikko a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#valikko::after {
+    content: "";
+    display: block;
+    clear: both;
+}

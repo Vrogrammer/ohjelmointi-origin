@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
+      button {
+        border-radius: 3px;
+        color: white;
+        font-size: 19px;
+        background-color: blueviolet;
+        font-weight: 700;
+        border: none;
+        padding: 10px 20px;
+        transition: opacity 0.1s;
+      }
+      button:hover {
+        opacity: 0.8;
+      }
+      button:active {
+        opacity: 0.5;
+      }
+      .box {
+        text-align: center;
+        background-color: black;
+        padding: 5px;
+        background-color: rgb(168, 102, 229);
+        color: white;
+        display: none;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nuolifunktiot</title>
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul id="takaisin">
+        <li><a href="../kevat.html">&#8592; Takaisin harjoituksiin</a></li>
+        <li><a href="../../index.html">&#8592; Takaisin etusivulle</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="container">
+        <button class="b1">Tervehdi</button>
+        <div class="box box1"></div>
+        <button class="b2">Vaihda taustan väriä</button>
+        <div class="box box2"></div>
+        <button id="palauta">Palauta tausta</button>
+        <button class="b3">Fahrenheit</button>
+        <div class="box box3"></div>
+        <button class="b4">Pienin</button>
+        <div class="box box4"></div>
+        <button class="b5">Muotoile valuutta</button>
+        <div class="box box5"></div>
+      </div>
+    </main>
+
+    <script src="h15.js"></script>
+  </body>
+</html>

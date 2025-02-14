@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virheiden käsittely</title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        
+        main,form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        #div{
+            padding: 5px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul id="takaisin">
+          <li><a href="../kevat.html">&#8592; Takaisin harjoituksiin</a> </li> 
+          <li><a href="../../index.html">&#8592; Takaisin etusivulle</a> </li> 
+        </ul>
+    </nav>
+    <main>
+        <form>
+            <input type="number" id="ala" placeholder="alaraja">
+            <input type="number" id="yla" placeholder="yläraja">
+            <input type="number" id="luku" placeholder="luku">
+            <div id="div"></div>
+        </form>
+        <button id="tarkista">Tarkista</button>
+    </main>
+<script>
+    function tarkistaLuku(luku,ala,yla) {
+        noerrorstyle = 'background-color:lightgreen;';
+        errorstyle = 'background-color:rgb(242, 155, 155);';
+
+        luku = parseInt(document.getElementById('luku').value);
+        yla = parseInt(document.getElementById('yla').value);
+        ala = parseInt(document.getElementById('ala').value);
+        if (ala > yla) {
+            document.getElementById('div').style = errorstyle;
+            document.getElementById('div').innerHTML = `Rajat virheelliset`;
+            throw Error('Rajat virheelliset');
+        }
+        if (isNaN(luku) || isNaN(ala) || isNaN(yla)) {
+            document.getElementById('div').style = errorstyle;
+            document.getElementById('div').innerHTML = `VIRHE: Anna vain lukuja`;
+            throw Error('Anna vain lukuja')
+        }
+        if (luku < ala) {
+            document.getElementById('div').style = errorstyle;
+            document.getElementById('div').innerHTML = `VIRHE: Liian pieni`;
+            throw Error('Liian pieni');
+        }
+        if (luku > yla) {
+            document.getElementById('div').style = errorstyle;
+            document.getElementById('div').innerHTML = `VIRHE: liian suuri`;
+            throw Error('Liian suuri');
+        }
+        document.getElementById('div').style = noerrorstyle;
+        document.getElementById('div').innerHTML = `Hyväksyttiin luku ${luku}`;
+        return parseInt(luku);
+    }
+    document.getElementById('tarkista').addEventListener('click',tarkistaLuku);
+</script>
+</body>
+</html>

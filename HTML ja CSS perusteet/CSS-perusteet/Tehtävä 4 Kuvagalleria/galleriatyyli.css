@@ -1,0 +1,21 @@
+.kuvarivi{
+    display:flex;
+    gap:10px;
+
+}
+.kuva{
+    border:black solid 1px;
+    width: 130px;
+    padding:3px 6px 0px 6px;
+}
+.kukkakuva{
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    object-position: top;
+}
+.kuvaus{
+    text-align: center;
+    margin:5px 0px 2px 0px;
+    font-size:15px;
+}
